@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Slika s kamere</title>
+</head>
+<body>
+    <h1>Slika s kamere</h1>
+    {% if image_data %}
+        <img src="data:image/jpeg;base64,{{ image_data }}" alt="Slika s kamere">
+    {% else %}
+        <p>Ni slike na voljo.</p>
+    {% endif %}
+</body>
+</html>
